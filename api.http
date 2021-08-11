@@ -1,0 +1,31 @@
+GET http://localhost:3000/pessoas
+
+### Obter uma pessoa
+GET http://localhost:3000/pessoas/1
+
+
+### Cria uma pessoa
+POST http://localhost:3000/pessoas HTTP/1.1
+Content-Type: application/json
+
+{
+  "nome": "Marcus Vinícius",
+  "ativo": true,
+  "email": "marcus@gmail.com",
+  "role": "docente"
+}
+
+### Atualizar uma pessoa
+PUT http://localhost:3000/pessoas/4 HTTP/1.1
+Content-Type: application/json
+
+{
+  "nome": "Marcus Vinícius",
+  "ativo": false,
+  "email": "marcus@gmail.com",
+  "role": "docente"
+}
+
+### Deletar uma pessoa
+DELETE http://localhost:3000/pessoas/4
+
